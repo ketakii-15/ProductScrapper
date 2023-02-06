@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Provago</title>
+
+</head>
+<body>
+    <form action="" method= post>
+        <input type="text" placeholder="search..." name="searchThisStuff">
+        <input type="submit" value="search">
+    </form>
+    <title>Search Bar</title>
+    <h1>  Products : </h1>
+    <style>
+        form{ 
+            display: flex;
+            justify-content: center;
+        }
+        #BoxA,#BoxS{
+            border: 1px solid black;       
+            display:inline-block;
+            border-radius: 10px;
+            padding:10px;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          
+          }
+    
+    </style>
+    <div id="BoxA">
+        <p>{{AproductName}}</p>
+        <p>{{AproductPrice}}</p>
+        <p>{{AproductLink}}</p>
+        <a href={{AproductName}}>Amazon Products</a>
+     </div>
+       <div id="BoxS">
+        <p>{{SproductName}}</p>
+        <p>{{SproductPrice}}</p>
+        <p>{{SproductLink}}</p>
+        <a href={{SproductName}}>SnapDeal Products</a>
+       </div>
+
+      
+</body>
+</html>
